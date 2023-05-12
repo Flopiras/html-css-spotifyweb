@@ -6,10 +6,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    margin-bottom: 6.5rem;
-}
-
 .flex{
     display: flex;
 }
@@ -65,7 +61,6 @@ main{
     width: calc(100% - 4rem);
     flex-shrink: 1;
     flex-grow: 1;
-    padding: 1rem;
     overflow: auto;
 }
 
@@ -75,15 +70,16 @@ main{
     width: 100%;
     padding: 0;
     height: 6rem;
-    background-color: #28282866;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content_main{
+        padding: 1rem;
 }
 
 /* FOOTER */
 footer{
     height: 6.5rem;
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
     width: 100%;
     padding: 1rem;
 }
