@@ -41,6 +41,11 @@ ul{
     border-radius: 30px;
 }
 
+h3,
+h4{
+    padding-top: 1rem;
+}
+
 /* ROOTS */
 :root{
     --dark: #282828;
@@ -70,6 +75,15 @@ aside{
     flex-grow: 0;
     flex-direction: column;
     justify-content: space-between;
+    line-height: 2rem;
+}
+
+.d_tablet{
+    display: none;
+}
+
+.playlist{
+    margin-top: 2rem;
 }
 
 /* MAIN */
@@ -119,6 +133,7 @@ nav ul{
 
 .card{
     text-align: center;
+    padding: 10px;
 }
 
 .card img{
@@ -156,6 +171,10 @@ footer{
 @media screen and (min-width: 768px) {
     .w-tablet{
         width: 200px;
+    }
+
+    .d_tablet{
+        display: contents;
     }
 
     .top_main{
