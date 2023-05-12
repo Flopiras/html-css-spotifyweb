@@ -44,6 +44,12 @@ ul{
 .border{
     border: 2px dashed pink;
 }
+
+/* TOP */
+.top{
+    height: calc(100vh - 6.5rem);
+}
+
 /* ASIDEBAR */
 aside{
     padding: 1rem;
@@ -54,12 +60,22 @@ aside{
     justify-content: space-between;
 }
 
-
+/* MAIN */
 main{
     width: calc(100% - 4rem);
     flex-shrink: 1;
     flex-grow: 1;
     padding: 1rem;
+    overflow: auto;
+}
+
+.top_main{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    height: 6rem;
+    background-color: #28282866;
 }
 
 /* FOOTER */
