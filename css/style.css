@@ -6,11 +6,70 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    margin-bottom: 6.5rem;
+}
+
 .flex{
     display: flex;
 }
 
-/* .container{
-    max-width: 1400px;
-    margin: 0 auto;
-} */
+.bg_dark{
+    background-color: var(--dark);
+}
+
+/* ROOTS */
+:root{
+    --dark: #282828;
+    --main_bg: #141922;
+    --active_bar: #8dcf2c;
+}
+
+/* TEMPORARY */
+.border{
+    border: 2px dashed pink;
+}
+
+/* FOOTER */
+footer{
+    height: 6.5rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.player{
+    height: 100%;
+    justify-content: space-between;
+}
+
+.player_center{
+    width: 50%;
+}
+
+.player_left,
+.player_right{
+    width: 25%;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .w-tablet{
+        width: 200px;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 992px) {
+    .w-laptop{
+        width: 300px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    
+}
+
