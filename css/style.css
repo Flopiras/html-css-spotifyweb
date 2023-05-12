@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.container{
+    width: 100%;
+}
+
 .flex{
     display: flex;
 }
@@ -27,6 +31,13 @@ a{
 
 ul{
     list-style: none;
+}
+
+.btn{
+    border: 1px solid white;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 30px;
 }
 
 /* ROOTS */
@@ -67,10 +78,15 @@ main{
 .top_main{
     position: absolute;
     top: 0;
-    width: 100%;
+    width: calc(100% - 4rem);
     padding: 0;
-    height: 6rem;
+    height: 5rem;
     background-color: rgba(0,0,0,0.5);
+    text-align: right;
+}
+
+.btn.upgrade{
+    transform: translate(0 50%);
 }
 
 .content_main{
@@ -102,6 +118,10 @@ footer{
 @media screen and (min-width: 768px) {
     .w-tablet{
         width: 200px;
+    }
+
+    .top_main{
+        width: calc(100% - 200px);
     }
 }
 
