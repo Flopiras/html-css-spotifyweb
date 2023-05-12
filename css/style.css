@@ -27,6 +27,7 @@
 a{
     text-decoration: none;
     color: currentColor;
+    display: block;
 }
 
 ul{
@@ -52,6 +53,10 @@ ul{
     border: 2px dashed pink;
 }
 
+section{
+    min-height: 200px;
+}
+
 /* TOP */
 .top{
     height: calc(100vh - 6.5rem);
@@ -73,6 +78,8 @@ main{
     flex-shrink: 1;
     flex-grow: 1;
     overflow: auto;
+    background-color: var(--main_bg);
+    color: white;
 }
 
 .top_main{
@@ -89,8 +96,39 @@ main{
     transform: translate(0 50%);
 }
 
+/* CONTENT MAIN */
 .content_main{
         padding: 1rem;
+        margin-top: 5rem;
+}
+
+nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.column{
+    flex-basis: 50%;
+    gap: 10px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.round{
+    border-radius: 50%;
 }
 
 /* FOOTER */
@@ -130,10 +168,15 @@ footer{
     .w-laptop{
         width: 200px;
     }
+    .column{
+        flex-basis: 25%;
+    }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-    
+    .column{
+        flex-basis: calc(100% / 6);
+    }
 }
 
