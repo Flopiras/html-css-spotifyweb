@@ -16,6 +16,21 @@ body{
 
 .bg_dark{
     background-color: var(--dark);
+    color: white;
+}
+
+.bg_black{
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul{
+    list-style: none;
 }
 
 /* ROOTS */
@@ -28,6 +43,23 @@ body{
 /* TEMPORARY */
 .border{
     border: 2px dashed pink;
+}
+/* ASIDEBAR */
+aside{
+    padding: 1rem;
+    width: 4rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+main{
+    width: calc(100% - 4rem);
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 1rem;
 }
 
 /* FOOTER */
@@ -64,7 +96,7 @@ footer{
 /* LAPTOP */
 @media screen and (min-width: 992px) {
     .w-laptop{
-        width: 300px;
+        width: 200px;
     }
 }
 
