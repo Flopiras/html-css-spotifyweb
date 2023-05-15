@@ -62,13 +62,13 @@ img{
 }
 
 /* TEMPORARY */
-.border{
+/* .border{
     border: 2px dashed pink;
 }
 
 section{
     min-height: 200px;
-}
+} */
 
 /* TOP */
 .top{
@@ -192,6 +192,9 @@ nav ul{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    color: var(--grey);
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .row{
@@ -206,6 +209,20 @@ nav ul{
 .card{
     text-align: center;
     padding: 10px;
+}
+
+section{
+    padding-top: 2rem;
+}
+
+section h3{
+    font-size: 1rem;
+}
+
+section h4{
+    color: var(--grey);
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
 }
 
 /* FOOTER */
