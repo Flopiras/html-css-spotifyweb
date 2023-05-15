@@ -318,6 +318,11 @@ footer{
     padding-left: 1rem;
 }
 
+.player_right{
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
     .w-tablet{
