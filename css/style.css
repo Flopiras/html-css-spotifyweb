@@ -173,6 +173,7 @@ main{
     text-align: right;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 
 .top_main div{
@@ -180,7 +181,7 @@ main{
 }
 
 .btn.upgrade{
-    font-size: 0.8REM;
+    font-size: 0.8rem;
 }
 
 /* CONTENT MAIN */
@@ -209,6 +210,19 @@ nav ul{
 .card{
     text-align: center;
     padding: 10px ;
+    position: relative;
+}
+
+.main_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .fa-circle-play{
+    position: absolute;
+    font-size: 5rem;
+    display: none;
 }
 
 section{
@@ -223,6 +237,33 @@ section h4{
     color: var(--grey);
     padding-top: 0.5rem;
     font-size: 0.8rem;
+}
+
+/* hover */
+
+.card:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card:hover .fa-circle-play.hover{
+    display: inline-block;
+}
+
+.btn.btn.upgrade:hover{
+    scale: 1.1;
+}
+
+li:hover{
+    color: white;
+}
+
+.top_player i:hover{
+    scale: 1.5;
+}
+
+.top_player .fa-circle-play:hover{
+    scale: 2.5;
 }
 
 /* FOOTER */
