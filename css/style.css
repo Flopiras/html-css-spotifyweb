@@ -242,7 +242,7 @@ footer{
 }
 
 .playing_song{
-    width: 70px;
+    width: 45px;
     object-fit: contain;
 }
 
@@ -253,7 +253,8 @@ footer{
 }
 
 .playing_info{
-    padding: 1rem;
+    padding: 0.5rem;
+    transform: translateY(-10px);
 }
 
 .playing_icons{
@@ -283,12 +284,8 @@ footer{
     align-items: center;
 }
 
-.play{
-    border: 2px solid;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
+.top_player .fa-circle-play{
+    scale: 2;
 }
 
 .fa-play{
@@ -296,8 +293,14 @@ footer{
 }
 
 .progress_bar{
-    border: 2px solid;
     flex-basis: 50%;
+    border-radius: 30px;
+    box-shadow: inset 0em 12px rgba(0,0,0,0.5);
+}
+
+.progress_done{
+    border: 2px solid white;
+    width: 25%;
     border-radius: 30px;
 }
 
@@ -306,16 +309,18 @@ footer{
     flex-basis: 25%;
 }
 
-.heard,
 .top_player_left{
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 2.5rem;
 }
 
-.total,
 .top_player_right{
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
+}
+
+.heard{
+    text-align: right;
 }
 
 .player_right{
