@@ -189,6 +189,12 @@ main{
         padding: 1rem;
 }
 
+.focus{
+    border: 2px solid greenyellow;
+    width: 50px;
+    margin: 0 auto;
+}
+
 nav ul{
     flex-wrap: wrap;
     justify-content: center;
