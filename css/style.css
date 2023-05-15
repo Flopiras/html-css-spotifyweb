@@ -239,32 +239,6 @@ section h4{
     font-size: 0.8rem;
 }
 
-/* hover */
-
-.card:hover img{
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.card:hover .fa-circle-play.hover{
-    display: inline-block;
-}
-
-.btn.btn.upgrade:hover{
-    scale: 1.1;
-}
-
-li:hover{
-    color: white;
-}
-
-.top_player i:hover{
-    scale: 1.5;
-}
-
-.top_player .fa-circle-play:hover{
-    scale: 2.5;
-}
 
 /* FOOTER */
 footer{
@@ -369,17 +343,52 @@ footer{
     align-items: center;
 }
 
+.fa-backward-step{
+    padding-left: 1rem;
+}
+
+.fa-forward-step{
+    padding-right: 1rem;
+}
+
+/* hover */
+
+.card:hover img{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card:hover .fa-circle-play.hover{
+    display: inline-block;
+}
+
+.btn.btn.upgrade:hover{
+    scale: 1.1;
+}
+
+li:hover{
+    color: white;
+}
+
+.top_player i:hover{
+    scale: 1.5;
+}
+
+.top_player .fa-circle-play:hover{
+    scale: 2.5;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
     .w-tablet{
         width: 200px;
     }
-
-     #logo_sm{
+    
+    #logo_sm{
         display: none;
-     }
-
-     #logo_lg{
+    }
+    
+    #logo_lg{
         display: inline-block;
      }
 
