@@ -237,6 +237,29 @@ footer{
     justify-content: space-between;
 }
 
+.player_left{
+    align-items: center;
+}
+
+.playing_song{
+    width: 70px;
+    object-fit: contain;
+}
+
+.player_left p{
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.playing_info{
+    padding: 1rem;
+}
+
+.playing_icons{
+    color: var(--grey);
+}
+
 .player_center{
     width: 50%;
 }
