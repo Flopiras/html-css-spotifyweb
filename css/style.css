@@ -6,10 +6,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.container{
-    width: 100%;
-}
-
 .flex{
     display: flex;
 }
@@ -21,7 +17,7 @@
 
 .bg_black{
     background-color: black;
-    color: white;
+    color: var(--grey);
 }
 
 a{
@@ -46,8 +42,20 @@ h4{
     padding-top: 1rem;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+
 /* ROOTS */
 :root{
+    --grey: #a3a3a3;
     --dark: #282828;
     --main_bg: #141922;
     --active_bar: #8dcf2c;
@@ -67,6 +75,13 @@ section{
     height: calc(100vh - 6.5rem);
 }
 
+.d_tablet{
+    display: none;
+}
+
+.d_tablet_block{
+    display: none;
+}
 /* ASIDEBAR */
 aside{
     padding: 1rem;
@@ -76,14 +91,66 @@ aside{
     flex-direction: column;
     justify-content: space-between;
     line-height: 2rem;
+    align-items: center;
+    text-align: center;
 }
 
-.d_tablet{
+aside h4{
+    color: white;
+}
+
+#logo_lg{
     display: none;
+    transform: translateX(-5px);
+}
+
+.top_aside .fa-solid{
+    padding-top: 1.5rem;
 }
 
 .playlist{
     margin-top: 2rem;
+}
+
+.download{
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    scale: 0.6;
+}
+
+.fa-arrow-down{
+    transform: translateY(-5px)
+}
+
+.bottom_aside{
+    width: 100%;
+}
+
+.install{
+    justify-content: center;
+    align-items: center;
+}
+
+.download_description{
+    padding-left: 1rem;
+}
+
+.line{
+    height: 2px;
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 1rem;
+}
+
+.avatar.round{
+    background-color: var(--grey);
+    width: 2rem;
+    height: 2rem;
+}
+
+.user{
+    align-items: center;
 }
 
 /* MAIN */
@@ -113,7 +180,7 @@ main{
 }
 
 .btn.upgrade{
-    transform: translate(0 50%);
+    font-size: 0.8REM;
 }
 
 /* CONTENT MAIN */
@@ -139,16 +206,6 @@ nav ul{
 .card{
     text-align: center;
     padding: 10px;
-}
-
-.card img{
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.round{
-    border-radius: 50%;
 }
 
 /* FOOTER */
@@ -178,8 +235,32 @@ footer{
         width: 200px;
     }
 
+     #logo_sm{
+        display: none;
+     }
+
+     #logo_lg{
+        display: inline-block;
+     }
+
+    aside{
+        text-align: left;
+    }
+
+    .fa-arrow-down {
+        transform: translate(4px , -5px);
+    }
+
+    .avatar.round{
+        margin-right: 1rem;
+    }
+
     .d_tablet{
-        display: contents;
+        display: inline;
+    }
+
+    .d_tablet_block{
+        display: block;
     }
 }
 
