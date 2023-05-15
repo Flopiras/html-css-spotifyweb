@@ -88,7 +88,6 @@ aside{
 
 /* MAIN */
 main{
-    width: calc(100% - 4rem);
     flex-shrink: 1;
     flex-grow: 1;
     overflow: auto;
@@ -97,13 +96,20 @@ main{
 }
 
 .top_main{
-    position: absolute;
+    position: sticky;
     top: 0;
-    width: calc(100% - 4rem);
+    left: 0;
+    right: 0;
     padding: 0;
     height: 5rem;
     background-color: rgba(0,0,0,0.5);
     text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top_main div{
+    padding-right: 2rem;
 }
 
 .btn.upgrade{
@@ -113,7 +119,6 @@ main{
 /* CONTENT MAIN */
 .content_main{
         padding: 1rem;
-        margin-top: 5rem;
 }
 
 nav ul{
@@ -175,10 +180,6 @@ footer{
 
     .d_tablet{
         display: contents;
-    }
-
-    .top_main{
-        width: calc(100% - 200px);
     }
 }
 
